@@ -21,11 +21,11 @@ function AboutUs(props: { ismobile: boolean }) {
     if (props.ismobile) {
         return (
             <>
-                <layouts.flex mt="30px">
-                    <Document file={resumePDF} onLoadSuccess={onDocumentLoadSuccess} >
-                        <Page pageNumber={pageNumber} width={400} />
-                    </Document>
-                </layouts.flex>
+                <layouts.DIV mt="30px" color="white">
+                <layouts.DIV textAlign="center"><h3>Contact Us!</h3></layouts.DIV>
+               <layouts.DIV>If you are looking to transform your lawn or request an estimate, then give us a call</layouts.DIV>
+               <layouts.DIV> HPH is based out of Cincinnati Ohio and will serve the Tri-state and beyond.</layouts.DIV>
+                </layouts.DIV>
             </>)
     }
     return (

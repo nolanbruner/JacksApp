@@ -11,11 +11,11 @@ const Home = () => {
     if (isMobile) {
         return (
             <>
-                <layouts.Splash>
-                    <layouts.Sidebar width="90vw" />
-                    <About color="white" />
-                    <layouts.Bod width="95vw" ><Projects isMobile={isMobile} /></layouts.Bod>
-                    <AboutUs ismobile={isMobile} />
+                <layouts.Splash height="auto">
+                    <Toolbar isMobile={true} />
+                   <layouts.Bod width="95vw"> <About color="green" /></layouts.Bod>
+                    <AboutUs ismobile={isMobile} />\
+                    <layouts.footer />
                 </layouts.Splash>
             </>
         )

@@ -38,7 +38,6 @@ const Themes = () => {
 
     return (
         <Background background={theme.primary} color="white">
-            <Toolbar color={theme.secondary} />
             <label>
                 Pick a Theme
                 {/* <select value={theme.primary} defaultValue="Pick a theme" onChange={handleChange}>

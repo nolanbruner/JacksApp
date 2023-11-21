@@ -5,6 +5,7 @@ import * as system from "styled-system"
 import styled from "@emotion/styled"
 import { ContainerProps } from "./style"
 import hph from "../assets/hph.jpg"
+import * as buttons from"./buttons"
 const ToolContainer = styled.div<ContainerProps>`
     width: 100%;
     background-color:green;
@@ -72,14 +73,14 @@ const Buttons = styled(Link) <ContainerProps>`
 // `
 const ColorBack = styled.div`
     // background-image:linear-gradient(to bottom right,orange,purple,blue);
-    background-size:200% 200%;
+    // background-size:200% 200%;
     background-clip:text;
     position:relative;
     background-position:middle;
-    height:3vh;
+    height:auto;
     // padding:5px;
     &:hover{
-        background-clip:padding-box;
+        // background-clip:padding-box;
         color:white;
         border:2px solid white
         // border-radius:15px;
@@ -92,14 +93,20 @@ const Logo = styled.img`
     overflow: hidden;
     top:-4vh;
 `
-function toolbar(props: { color?: string }) {
+function toolbar(props: { isMobile?: boolean }) {
+    if(props.isMobile){
+return( <ToolContainer mr="auto" ml="auto" height="10vh">
+   <layouts.flex width="10vw"> <Logo src={hph} /></layouts.flex>
+   <layouts.flex ml="50vw" mt="20px"><buttons.primary>Call Us Today</buttons.primary></layouts.flex>
+</ToolContainer>)
+    }
     return (<>
     {/* <layouts.DIV backgroundColor="blue">He</layouts.DIV> */}
-        <ToolContainer mr="auto" ml="auto" height="10vh">
+        <ToolContainer mr="auto" ml="auto" height="10vh" pt="5px">
             <layouts.flex >
-                <ColorBack><Logo src={hph} ></Logo></ColorBack>
+                <Logo src={hph} ></Logo>
             </layouts.flex>
-            <layouts.flex ml="15vw" >
+            <layouts.flex ml="15vw" mt="3vh">
 
                 <ColorBack >
                     <Buttons height="100%" to="/" >Home</Buttons>
