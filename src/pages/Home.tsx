@@ -11,9 +11,9 @@ const Home = () => {
     if (isMobile) {
         return (
             <>
-                <layouts.Splash height="auto">
+                <layouts.Splash height="auto" mt="0">
                     <Toolbar isMobile={true} />
-                   <layouts.Bod width="95vw"> <About color="green" /></layouts.Bod>
+                    <layouts.Bod width="95vw"> <About color="green" /></layouts.Bod>
                     <AboutUs ismobile={isMobile} />\
                     <layouts.footer />
                 </layouts.Splash>

@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 import { Link } from "react-router-dom"
 import * as layouts from "../layouts"
 import { ContainerProps } from "../layouts/style"
-import  pics from "../photos/grass4.jpg"
+import pics from "../photos/grass4.jpg"
 const Image = styled.img<ContainerProps>`
     height:auto;
     width:40%;
@@ -48,12 +48,12 @@ const Gallary = (props: { isMobile: boolean }) => {
                 {/* <layouts.flex key={key}> */}
                 <layouts.grid alignContent="center" width="100vh">
                     <Image src={pics} alt="" width="90px" p="5" />
-                    <Image src={pics} alt="" width="90px"/>
+                    <Image src={pics} alt="" width="90px" />
 
-                    <Image src={pics} alt="" width="90px"/>
+                    <Image src={pics} alt="" width="90px" />
 
-                    <Image src={pics} alt="" width="90px"/>
-                    <Image src={pics} alt="" width="200px"/>
+                    <Image src={pics} alt="" width="90px" />
+                    <Image src={pics} alt="" width="200px" />
 
                     {/* <StyledLink to={`/project/${project.name}`} > < h2 color="black">{project.title}</h2> </StyledLink> */}
                     {/* <p>{project.overview}</p>

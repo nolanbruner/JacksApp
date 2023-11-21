@@ -1,7 +1,7 @@
 import React from "react";
 import Toolbar from "../layouts/Toolbar";
 import styled from "@emotion/styled"
-import { background, color} from "styled-system"
+import { background, color } from "styled-system"
 
 
 interface backgroundProps {

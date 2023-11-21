@@ -5,7 +5,7 @@ import * as system from "styled-system"
 import styled from "@emotion/styled"
 import { ContainerProps } from "./style"
 import hph from "../assets/hph.jpg"
-import * as buttons from"./buttons"
+import * as buttons from "./buttons"
 const ToolContainer = styled.div<ContainerProps>`
     width: 100%;
     background-color:green;
@@ -94,14 +94,14 @@ const Logo = styled.img`
     top:-4vh;
 `
 function toolbar(props: { isMobile?: boolean }) {
-    if(props.isMobile){
-return( <ToolContainer mr="auto" ml="auto" height="10vh">
-   <layouts.flex width="10vw"> <Logo src={hph} /></layouts.flex>
-   <layouts.flex ml="50vw" mt="20px"><buttons.primary>Call Us Today</buttons.primary></layouts.flex>
-</ToolContainer>)
+    if (props.isMobile) {
+        return (<ToolContainer mr="auto" ml="auto" height="10vh">
+            <layouts.flex width="10vw"> <Logo src={hph} /></layouts.flex>
+            <layouts.flex ml="50vw" mt="20px"><buttons.primary>Call Us Today</buttons.primary></layouts.flex>
+        </ToolContainer>)
     }
     return (<>
-    {/* <layouts.DIV backgroundColor="blue">He</layouts.DIV> */}
+        {/* <layouts.DIV backgroundColor="blue">He</layouts.DIV> */}
         <ToolContainer mr="auto" ml="auto" height="10vh" pt="5px">
             <layouts.flex >
                 <Logo src={hph} ></Logo>
@@ -134,7 +134,7 @@ return( <ToolContainer mr="auto" ml="auto" height="10vh">
 
             </layouts.flex>
         </ToolContainer>
-        </>
+    </>
     )
 }
 export default toolbar
