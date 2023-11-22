@@ -1,7 +1,7 @@
 import * as layouts from "../layouts"
 import { default as Toolbar } from "../layouts/Toolbar"
 import { default as About } from "../layouts/about"
-import Projects from "./Gallary"
+import Projects from "./Gallery"
 import { Outlet } from "react-router-dom";
 import AboutUs from "./aboutUs"
 

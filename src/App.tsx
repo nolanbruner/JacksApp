@@ -1,7 +1,7 @@
 import { default as Home } from "./pages/Home"
 import { default as AboutUs } from "./pages/aboutUs"
 import { default as Project } from "./pages/project"
-import { default as Gallary } from "./pages/Gallary"
+import { default as Gallery } from "./pages/Gallery"
 import { default as Services } from "./pages/Services"
 import { default as NotFoundPage } from "./pages/NotFoundPage"
 import { default as About } from "./layouts/about"
@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Home />} >
           <Route index element={<About color={""} />} />
           <Route path="/aboutUs" element={<AboutUs ismobile={false} />} />
-          <Route path="/gallary" element={< Gallary isMobile={false} />} />
+          <Route path="/gallery" element={< Gallery isMobile={false} />} />
 
           <Route path="/services" element={<Services ismobile={false} />} />
 

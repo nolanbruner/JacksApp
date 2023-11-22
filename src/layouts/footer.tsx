@@ -1,6 +1,6 @@
 import styled from "styled-components";
 const Foot = styled.div`
-    background:blue; 
+    background:black; 
     color:white;
     text-align:center;
     margin:0px;

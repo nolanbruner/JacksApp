@@ -19,7 +19,7 @@ const StyledLink = styled(Link) <ContainerProps>`
 `
 
 
-const Gallary = (props: { isMobile: boolean }) => {
+const Gallery = (props: { isMobile: boolean }) => {
     // if (props.isMobile) {
     //     return (
     //         <>
@@ -47,13 +47,13 @@ const Gallary = (props: { isMobile: boolean }) => {
                 {/* {projectList.map((project, key) => ( */}
                 {/* <layouts.flex key={key}> */}
                 <layouts.grid alignContent="center" width="100vh">
-                    <Image src={pics} alt="" width="90px" p="5" />
-                    <Image src={pics} alt="" width="90px" />
+                    <Image src={pics} alt=""  p="5" />
+                    <Image src={pics} alt="" />
 
-                    <Image src={pics} alt="" width="90px" />
+                    <Image src={pics} alt="" />
 
-                    <Image src={pics} alt="" width="90px" />
-                    <Image src={pics} alt="" width="200px" />
+                    <Image src={pics} alt=""/>
+                    <Image src={pics} alt="" />
 
                     {/* <StyledLink to={`/project/${project.name}`} > < h2 color="black">{project.title}</h2> </StyledLink> */}
                     {/* <p>{project.overview}</p>
@@ -69,4 +69,4 @@ const Gallary = (props: { isMobile: boolean }) => {
 }
 
 
-export default Gallary
+export default Gallery

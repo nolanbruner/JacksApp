@@ -115,7 +115,7 @@ function toolbar(props: { isMobile?: boolean }) {
                     <Buttons to="/services">Services</Buttons>
                 </ColorBack>
                 <ColorBack>
-                    <Buttons to="/gallary">Gallary</Buttons>
+                    <Buttons to="/gallery">Gallery</Buttons>
                 </ColorBack>
                 <ColorBack>
                     <Buttons to="/aboutUs">About Us</Buttons>
